@@ -5,7 +5,7 @@ def lab_work_5():
             return True
         except ValueError:
             return False
-
+print('try')
     print('Вводить: \nt1 \nt2 \nt3 \nt4')
     t1 = str(input())
     t2 = str(input())
