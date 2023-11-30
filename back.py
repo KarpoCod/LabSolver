@@ -1,3 +1,17 @@
+def inputf():
+    fl = True
+    while fl:
+        x = input()
+        try:
+            x = x.split(',')
+        except:
+            x = [x[1:]]
+        try:
+            t.append(float(float(str(x[0]) + "." + str(x[1])) if len(x) > 1  else float(x[0])))
+            fl = False
+        except:
+            print("вы ввели не число")
+
 def lab_work_5():
     def isfloat(value):
         try:
