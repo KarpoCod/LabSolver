@@ -18,7 +18,7 @@ def lab_work_5():
     print('Введите данные таймера:')
     t = []
     for i in range(4):
-        t.append(inputf("t" + i + " = "))
+        t.append(inputf("t" + str(i) + " = "))
 
     l = 10 / 1000
     M = 510 / 1000
