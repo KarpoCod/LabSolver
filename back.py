@@ -1,7 +1,10 @@
-def inputf(inp):
+def inputf(inp = ""):# ты спросишь для чего я добавил ' = ""'?
+                    # А я отвечу чтобы он не буянил если ты в скобках при вызове функции не пишешь ничего,
+                    # а так эта штука, чтобы он писал что тебе (*пользователю) вводить
+                    # исправь в 6 лабе
     fl = True
     while fl:
-        x = input()
+        x = input(inp)
         try:
             x = x.split(',')
         except:
@@ -11,7 +14,6 @@ def inputf(inp):
             fl = False
         except:
             print("вы ввели не число")
-            print(inp, end=' ')
     return out
 
 
@@ -19,7 +21,6 @@ def lab_work_5():
     print('Введите данные таймера:')
     t = []
     for i in range(4):
-        print(f't{i + 1}: ')
         t.append(inputf("t" + str(i+1) + " = "))
 
     l = 10 / 1000
@@ -65,10 +66,10 @@ def lab_work_5():
 
 def lab_work_6():
     print('Вводить: \nF \nd_s (абсолютная погрешность отклонения среднего арифметического s) \nH \nh')
-    F = inputf(input())
-    d_s = inputf(input())
-    H = inputf(input())
-    h = inputf(input())
+    F = inputf()
+    d_s = inputf()
+    H = inputf()
+    h = inputf()
 
     w_m1 = 0.000121
     w_m2 = 0.000776
